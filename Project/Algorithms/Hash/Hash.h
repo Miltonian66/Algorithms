@@ -10,11 +10,3 @@ public:
 	Hash(CommandReceiver& commandReceiver);
 	std::size_t operator()(std::string source);
 };
-
-class SomeAlgorithm {
-private:
-	CommandReceiver& cr;
-public:
-	SomeAlgorithm(CommandReceiver& cr);
-};
-

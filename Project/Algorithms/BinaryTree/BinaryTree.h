@@ -14,7 +14,7 @@ private:
 	Node* root = nullptr;
 
 	void remove(Node* Node);
-	CommandReceiver receiver;
+	CommandReceiver& receiver;
 
 public:
 	void insert(long long val);
@@ -25,6 +25,6 @@ public:
 	///			number of traversed vertices, otherwise</returns>
 	long long contains(long long val);
 
-	BinaryTree(std::initializer_list<long long> _arr, CommandReceiver receiver);
+	BinaryTree(std::initializer_list<long long> _arr, CommandReceiver& receiver);
 	~BinaryTree();
 };

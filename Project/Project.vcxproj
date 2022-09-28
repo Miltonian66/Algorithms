@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,6 +103,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,6 +118,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +133,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,6 +145,8 @@
   <ItemGroup>
     <ClCompile Include="Algorithms\BinaryTree\BinaryTree.cpp" />
     <ClCompile Include="Algorithms\BinaryTree\Commands\BeginInsertion.cpp" />
+    <ClCompile Include="Algorithms\Graph\BFS\BFS.cpp" />
+    <ClCompile Include="Algorithms\Graph\DFS\DFS.cpp" />
     <ClCompile Include="Algorithms\Hash\Commands\BeginHash.cpp" />
     <ClCompile Include="Algorithms\Hash\Commands\EndHash.cpp" />
     <ClCompile Include="Algorithms\Hash\Commands\HashIncreasePower.cpp" />
@@ -152,6 +158,8 @@
   <ItemGroup>
     <ClInclude Include="Algorithms\BinaryTree\BinaryTree.h" />
     <ClInclude Include="Algorithms\BinaryTree\Commands\BeginInsertion.h" />
+    <ClInclude Include="Algorithms\Graph\BFS\BFS.h" />
+    <ClInclude Include="Algorithms\Graph\DFS\DFS.h" />
     <ClInclude Include="Algorithms\Hash\Commands\BeginHash.h" />
     <ClInclude Include="Algorithms\Hash\Commands\EndHash.h" />
     <ClInclude Include="Algorithms\Hash\Commands\HashIncreasePower.h" />

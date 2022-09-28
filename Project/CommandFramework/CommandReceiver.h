@@ -16,4 +16,14 @@ public:
 	void removeListener(std::string key);
 
 	void addCommand(ACommand* command);
+
+	CommandReceiver(CommandReceiver&& other) = delete;
+
+	CommandReceiver(CommandReceiver& other) = delete;
+
+	void operator=(CommandReceiver& other) = delete;
+
+	CommandReceiver() = default;
+
+	~CommandReceiver();
 };

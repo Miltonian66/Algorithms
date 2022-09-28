@@ -42,6 +42,12 @@
     <ClCompile Include="CommandFramework\CommandReceiver.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Algorithms\Graph\BFS\BFS.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Graph\DFS\DFS.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms\BinaryTree\Commands\BeginInsertion.h">
@@ -72,6 +78,12 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="CommandFramework\CommandReceiver.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Graph\BFS\BFS.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Graph\DFS\DFS.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

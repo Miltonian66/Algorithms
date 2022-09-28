@@ -14,3 +14,10 @@ void CommandReceiver::addCommand(ACommand* command) {
 		(*i.second)(command);
 	}
 }
+
+CommandReceiver::~CommandReceiver() {
+	for (auto& i : commands)
+		delete i;
+	for (auto& i : listeners)
+		delete i.second;
+}

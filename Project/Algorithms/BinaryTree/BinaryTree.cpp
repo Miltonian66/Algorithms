@@ -55,7 +55,7 @@ long long BinaryTree::contains(long long val) {
     return -1;
 }
 
-BinaryTree::BinaryTree(std::initializer_list<long long> _arr, CommandReceiver) : receiver(receiver) {
+BinaryTree::BinaryTree(std::initializer_list<long long> _arr, CommandReceiver& receiver) : receiver(receiver) {
     for (long long i : _arr) {
         insert(i);
     }
