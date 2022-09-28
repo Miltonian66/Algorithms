@@ -1,5 +1,6 @@
 #include "BFS.h"
 #include "Commands/BeginBFS.h"
+#include "Commands/EndBFS.h"
 #include <queue>
 
 std::vector<bool> BFS::operator()(std::vector<std::vector<bool>> const& graph, size_t start) {
@@ -22,5 +23,6 @@ std::vector<bool> BFS::operator()(std::vector<std::vector<bool>> const& graph, s
         }
     }
 
+    receiver.addCommand(new EndBFS(used));
     return used;
 }

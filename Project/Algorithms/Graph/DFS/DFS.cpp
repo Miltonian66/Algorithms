@@ -1,5 +1,6 @@
 #include "DFS.h"
 #include "Commands/BeginDFS.h"
+#include "Commands/EndDFS.h"
 #include <stack>
 
 std::vector<bool> DFS::operator()(std::vector<std::vector<bool>> const& graph, size_t start) {
@@ -21,6 +22,7 @@ std::vector<bool> DFS::operator()(std::vector<std::vector<bool>> const& graph, s
             }
         }
     }
-
+    
+    receiver.addCommand(new EndDFS(used));
     return used;
 }
