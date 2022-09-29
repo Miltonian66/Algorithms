@@ -1,10 +1,10 @@
 #pragma once
 #include <iostream>
-#include <Algorithms/Hash/Hash.h>
-#include <Algorithms/Hash/Commands/BeginHash.h>
-#include <Algorithms/Hash/Commands/EndHash.h>
-#include <Algorithms/Hash/Commands/HashNextCharacter.h>
-#include <Algorithms/Hash/Commands/HashIncreasePower.h>
+#include "Hash.h"
+#include "Commands/BeginHash.h"
+#include "Commands/EndHash.h"
+#include "Commands/HashNextCharacter.h"
+#include "Commands/HashIncreasePower.h"
 #include <CommandFramework/AListener.h>
 
 
