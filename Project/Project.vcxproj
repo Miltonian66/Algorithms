@@ -143,41 +143,43 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Algorithms\BinaryTree\BinaryTree.cpp" />
-    <ClCompile Include="Algorithms\BinaryTree\Commands\BeginInsertion.cpp" />
+    <ClCompile Include="Algorithms\DataStructures\BinaryTree\BinaryTree.cpp" />
+    <ClCompile Include="Algorithms\DataStructures\BinaryTree\Commands\BeginInsertion.cpp" />
     <ClCompile Include="Algorithms\Graph\BFS\BFS.cpp" />
     <ClCompile Include="Algorithms\Graph\BFS\Commands\BeginBFS.cpp" />
     <ClCompile Include="Algorithms\Graph\BFS\Commands\EndBFS.cpp" />
     <ClCompile Include="Algorithms\Graph\DFS\Commands\BeginDFS.cpp" />
     <ClCompile Include="Algorithms\Graph\DFS\Commands\EndDFS.cpp" />
     <ClCompile Include="Algorithms\Graph\DFS\DFS.cpp" />
-    <ClCompile Include="Algorithms\Hash\Commands\BeginHash.cpp" />
-    <ClCompile Include="Algorithms\Hash\Commands\EndHash.cpp" />
-    <ClCompile Include="Algorithms\Hash\Commands\HashIncreasePower.cpp" />
-    <ClCompile Include="Algorithms\Hash\Commands\HashNextCharacter.cpp" />
-    <ClCompile Include="Algorithms\Hash\Hash.cpp" />
+    <ClCompile Include="Algorithms\Util\Hash\Commands\BeginHash.cpp" />
+    <ClCompile Include="Algorithms\Util\Hash\Commands\EndHash.cpp" />
+    <ClCompile Include="Algorithms\Util\Hash\Commands\HashIncreasePower.cpp" />
+    <ClCompile Include="Algorithms\Util\Hash\Commands\HashNextCharacter.cpp" />
+    <ClCompile Include="Algorithms\Util\Hash\Hash.cpp" />
     <ClCompile Include="CommandFramework\CommandReceiver.cpp" />
+    <ClCompile Include="Algorithms\DataStructures\RBTree\RedBlackTree.cpp" />
     <ClCompile Include="Test\TestConfig.h" />
     <ClCompile Include="Test\TestMain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Algorithms\BinaryTree\BinaryTree.h" />
-    <ClInclude Include="Algorithms\BinaryTree\Commands\BeginInsertion.h" />
+    <ClInclude Include="Algorithms\DataStructures\BinaryTree\BinaryTree.h" />
+    <ClInclude Include="Algorithms\DataStructures\BinaryTree\Commands\BeginInsertion.h" />
     <ClInclude Include="Algorithms\Graph\BFS\BFS.h" />
     <ClInclude Include="Algorithms\Graph\BFS\Commands\BeginBFS.h" />
     <ClInclude Include="Algorithms\Graph\BFS\Commands\EndBFS.h" />
     <ClInclude Include="Algorithms\Graph\DFS\Commands\BeginDFS.h" />
     <ClInclude Include="Algorithms\Graph\DFS\Commands\EndDFS.h" />
     <ClInclude Include="Algorithms\Graph\DFS\DFS.h" />
-    <ClInclude Include="Algorithms\Hash\Commands\BeginHash.h" />
-    <ClInclude Include="Algorithms\Hash\Commands\EndHash.h" />
-    <ClInclude Include="Algorithms\Hash\Commands\HashIncreasePower.h" />
-    <ClInclude Include="Algorithms\Hash\Commands\HashNextCharacter.h" />
-    <ClInclude Include="Algorithms\Hash\Hash.h" />
-    <ClInclude Include="Algorithms\Hash\Test.h" />
+    <ClInclude Include="Algorithms\Util\Hash\Commands\BeginHash.h" />
+    <ClInclude Include="Algorithms\Util\Hash\Commands\EndHash.h" />
+    <ClInclude Include="Algorithms\Util\Hash\Commands\HashIncreasePower.h" />
+    <ClInclude Include="Algorithms\Util\Hash\Commands\HashNextCharacter.h" />
+    <ClInclude Include="Algorithms\Util\Hash\Hash.h" />
+    <ClInclude Include="Algorithms\Util\Hash\Test.h" />
     <ClInclude Include="CommandFramework\ACommand.h" />
     <ClInclude Include="CommandFramework\AListener.h" />
     <ClInclude Include="CommandFramework\CommandReceiver.h" />
+    <ClInclude Include="Algorithms\DataStructures\RBTree\RedBlackTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
