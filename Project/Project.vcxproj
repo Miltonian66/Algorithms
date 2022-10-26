@@ -119,6 +119,8 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -164,6 +166,7 @@
   <ItemGroup>
     <ClInclude Include="Algorithms\DataStructures\BinaryTree\BinaryTree.h" />
     <ClInclude Include="Algorithms\DataStructures\BinaryTree\Commands\BeginInsertion.h" />
+    <ClInclude Include="Algorithms\DataStructures\RBTree\Test.h" />
     <ClInclude Include="Algorithms\Graph\BFS\BFS.h" />
     <ClInclude Include="Algorithms\Graph\BFS\Commands\BeginBFS.h" />
     <ClInclude Include="Algorithms\Graph\BFS\Commands\EndBFS.h" />
@@ -180,6 +183,8 @@
     <ClInclude Include="CommandFramework\AListener.h" />
     <ClInclude Include="CommandFramework\CommandReceiver.h" />
     <ClInclude Include="Algorithms\DataStructures\RBTree\RedBlackTree.h" />
+    <ClInclude Include="CommandFramework\Interfaces.h" />
+    <ClInclude Include="CommandFramework\Test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
