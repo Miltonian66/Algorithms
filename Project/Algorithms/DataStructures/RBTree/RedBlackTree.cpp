@@ -201,6 +201,20 @@ RedBlackTree::Node *RedBlackTree::_find(AKey *key, Node *root){
    return _find(key, root->right);
 }
 
+RedBlackTree::Node *RedBlackTree::_find(AKey *key, Node *root, void *value, bool (*equals)(void *, void *)){
+   if(root == NILL || root == nullptr)
+      return nullptr;
+   if((*key) == (*root->key)){
+      if(equals(value, root->value))
+         return root;
+      Node *res = _find(key, root->left, value, equals);
+      return res ? res : _find(key, root->right, value, equals);
+   }
+   if((*key) < (*root->key))
+      return _find(key, root->left, value, equals);
+   return _find(key, root->right, value, equals);
+}
+
 std::pair<AKey *, void *> RedBlackTree::getMax(){
    Node *r = _max(root);
    if(r == NILL || r == nullptr)
@@ -261,6 +275,20 @@ void *RedBlackTree::remove(AKey *key){
    delete removed;
    return res;
 }
+
+void *RedBlackTree::remove(AKey *key, void *value, bool (*equals)(void *, void *)){
+   Node *rm = _find(key, root, value, equals);
+   if(!rm)
+      return nullptr;
+   _size--;
+   Node *removed = _remove(rm);
+   void *res = removed->value;
+   if(removed == root)
+      root = nullptr;
+   delete removed;
+   return res;
+}
+
 RedBlackTree::Node *RedBlackTree::_remove(Node *toRemove){
    if(toRemove == root && root->right == NILL && root->left == NILL){
       root = nullptr;

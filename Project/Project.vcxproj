@@ -153,6 +153,7 @@
     <ClCompile Include="Algorithms\Graph\DFS\Commands\BeginDFS.cpp" />
     <ClCompile Include="Algorithms\Graph\DFS\Commands\EndDFS.cpp" />
     <ClCompile Include="Algorithms\Graph\DFS\DFS.cpp" />
+    <ClCompile Include="Algorithms\Graph\Dijkstra\Dijkstra.cpp" />
     <ClCompile Include="Algorithms\Util\Hash\Commands\BeginHash.cpp" />
     <ClCompile Include="Algorithms\Util\Hash\Commands\EndHash.cpp" />
     <ClCompile Include="Algorithms\Util\Hash\Commands\HashIncreasePower.cpp" />
@@ -173,6 +174,8 @@
     <ClInclude Include="Algorithms\Graph\DFS\Commands\BeginDFS.h" />
     <ClInclude Include="Algorithms\Graph\DFS\Commands\EndDFS.h" />
     <ClInclude Include="Algorithms\Graph\DFS\DFS.h" />
+    <ClInclude Include="Algorithms\Graph\Dijkstra\Dijkstra.h" />
+    <ClInclude Include="Algorithms\Graph\Dijkstra\Test.h" />
     <ClInclude Include="Algorithms\Util\Hash\Commands\BeginHash.h" />
     <ClInclude Include="Algorithms\Util\Hash\Commands\EndHash.h" />
     <ClInclude Include="Algorithms\Util\Hash\Commands\HashIncreasePower.h" />

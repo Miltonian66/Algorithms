@@ -16,13 +16,9 @@ class RedBlackTree{
       Node *right, *left, *parent;
 
       Node();
-
       Node(Node *NILL);
-
       Node(AKey *key, void *value, Node *NILL);
-
       Node(const Node &other, Node *oNILL, Node *NILL, AKey *(*copyKey)(AKey *), void *(*copyValue)(void *));
-
       ~Node();
    };
 
@@ -36,6 +32,7 @@ public:
    bool isValid();
    void insert(AKey *key, void *value);
    void *remove(AKey *key);
+   void *remove(AKey *key, void *value, bool (*equals)(void *, void *));
    void *find(AKey *key);
    std::pair<AKey *, void *> getMin();
    std::pair<AKey *, void *> getMax();
@@ -51,6 +48,7 @@ private:
    Node *_insert(Node *root, AKey *key, void *value);
    Node *_remove(Node *toRemove);
    Node *_find(AKey *key, Node *root);
+   Node *_find(AKey *key, Node *root, void *value, bool (*equals)(void *, void *));
    void checkRoot(Node *current);
    void checkParentRed(Node *current);
    void handleUncleBlack(Node *current);
