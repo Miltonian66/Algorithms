@@ -2,6 +2,7 @@
 #include <Algorithms/Util/Hash/Test.h>
 #include <Algorithms/DataStructures/RBTree/Test.h>
 #include <Algorithms/Graph/Dijkstra/Test.h>
+#include <Algorithms/Sort/HeapSort/Test.h>
 #include <CommandFramework/Test.h>
 
 
@@ -18,7 +19,12 @@ int main() {
    #ifdef TEST_RBTREE
    testRBTree();
    #endif
+
    #ifdef TEST_DIJKSTRA
    showAndTestDijkstra();
+   #endif
+
+   #ifdef TEST_HEAPSORT
+   testHeapSort();
    #endif
 }

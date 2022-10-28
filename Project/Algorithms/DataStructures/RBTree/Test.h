@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <random>
 #include <algorithm>
@@ -8,8 +9,9 @@
 
 class IntKey : public AKey{
 public:
-   IntKey(int key) : key(key){};
-   IntKey(const IntKey &other) :key(other.key){};
+   IntKey() : key(0){}
+   IntKey(int key) : key(key){}
+   IntKey(const IntKey &other) :key(other.key){}
    bool operator<(Comparable const &other) override{
       IntKey const *oth = dynamic_cast<IntKey const *>(&other);
       if(!oth)
