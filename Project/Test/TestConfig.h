@@ -12,3 +12,7 @@
 // 
 //#define TEST_HEAPSORT
 //#define SHOW_HEAPSORT
+//
+#define TEST_SUDOKU
+#define SHOW_SUDOKU
+//

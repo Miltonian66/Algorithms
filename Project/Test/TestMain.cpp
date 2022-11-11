@@ -3,6 +3,7 @@
 #include <Algorithms/DataStructures/RBTree/Test.h>
 #include <Algorithms/Graph/Dijkstra/Test.h>
 #include <Algorithms/Sort/HeapSort/Test.h>
+#include <Algorithms/EnumerationBackTrach/Sudoku/Test.h>
 #include <CommandFramework/Test.h>
 
 
@@ -26,5 +27,9 @@ int main() {
 
    #ifdef TEST_HEAPSORT
    testHeapSort();
+   #endif
+
+   #ifdef TEST_SUDOKU
+   testSudoku();
    #endif
 }
