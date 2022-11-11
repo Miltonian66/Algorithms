@@ -3,6 +3,7 @@
 #include <Algorithms/DataStructures/RBTree/Test.h>
 #include <Algorithms/Graph/Dijkstra/Test.h>
 #include <Algorithms/Sort/HeapSort/Test.h>
+#include <Algorithms/DataStructures/LinkedList/Test.h>
 #include <CommandFramework/Test.h>
 
 

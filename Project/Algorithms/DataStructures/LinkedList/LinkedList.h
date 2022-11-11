@@ -1,17 +1,27 @@
 #pragma once
 #include <functional>
-class LinkedList {
+#include <CommandFramework/CommandReceiver.h>
+class LinkedList{
 private:
-	struct Node {
-		void* value;
-		Node* next;
-		Node* prev;
-	};
-	Node* head;
-	remove(Node* node);
+   struct Node{
+      void *value = nullptr;
+      Node *next = nullptr;
+      Node *prev = nullptr;
+   };
+   Node *head = nullptr;
+   Node *tail = nullptr;
+   void *_remove(Node *node);
+   size_t _size = 0;
+   CommandReceiver &receiver;
 public:
-	LinkedList();
-	void insert(void* value);
-	void* remove(const std::function <bool(void*)> pred);
-	void forEach(const std::function<bool(void*)> action);
+   LinkedList(CommandReceiver &receiver);
+   void insert(void *value);
+   void *remove(const std::function <bool(void *)> pred);
+   void forEach(const std::function <void(void *)> action);
+   void *getHead();
+   void *getTail();
+   void *removeHead();
+   void *removeTail();
+   size_t size();
+   bool empty();
 };
