@@ -1,162 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Исходные файлы">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Файлы заголовков">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Файлы ресурсов">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+    <ClCompile Include="Algorithms\DataStructures\BinaryTree\BinaryTree.cpp" />
+    <ClCompile Include="Algorithms\DataStructures\BinaryTree\Commands\BeginInsertion.cpp" />
+    <ClCompile Include="Algorithms\DataStructures\LinkedList\LinkedList.cpp" />
+    <ClCompile Include="Algorithms\DataStructures\Stack\Stack.cpp" />
+    <ClCompile Include="Algorithms\Graph\BFS\BFS.cpp" />
+    <ClCompile Include="Algorithms\Graph\BFS\Commands\BeginBFS.cpp" />
+    <ClCompile Include="Algorithms\Graph\BFS\Commands\EndBFS.cpp" />
+    <ClCompile Include="Algorithms\Graph\DFS\Commands\BeginDFS.cpp" />
+    <ClCompile Include="Algorithms\Graph\DFS\Commands\EndDFS.cpp" />
+    <ClCompile Include="Algorithms\Graph\DFS\DFS.cpp" />
+    <ClCompile Include="Algorithms\Graph\Dijkstra\Dijkstra.cpp" />
+    <ClCompile Include="Algorithms\Sort\HeapSort\HeapSort.cpp" />
+    <ClCompile Include="Algorithms\Util\Hash\Commands\BeginHash.cpp" />
+    <ClCompile Include="Algorithms\Util\Hash\Commands\EndHash.cpp" />
+    <ClCompile Include="Algorithms\Util\Hash\Commands\HashIncreasePower.cpp" />
+    <ClCompile Include="Algorithms\Util\Hash\Commands\HashNextCharacter.cpp" />
+    <ClCompile Include="Algorithms\Util\Hash\Hash.cpp" />
+    <ClCompile Include="CommandFramework\CommandReceiver.cpp" />
+    <ClCompile Include="Algorithms\DataStructures\RBTree\RedBlackTree.cpp" />
+    <ClCompile Include="Test\TestConfig.h" />
+    <ClCompile Include="Test\TestMain.cpp" />
+    <ClCompile Include="Algorithms\DataStructures\HashMap\StringHashMap.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Algorithms\DataStructures\BinaryTree\Commands\BeginInsertion.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\DataStructures\BinaryTree\BinaryTree.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Util\Hash\Commands\BeginHash.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Util\Hash\Commands\EndHash.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Util\Hash\Commands\HashIncreasePower.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Util\Hash\Commands\HashNextCharacter.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Util\Hash\Hash.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandFramework\CommandReceiver.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Graph\BFS\BFS.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Graph\DFS\DFS.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Test\TestConfig.h">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Graph\BFS\Commands\BeginBFS.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Graph\BFS\Commands\EndBFS.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Graph\DFS\Commands\BeginDFS.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Graph\DFS\Commands\EndDFS.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Test\TestMain.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\DataStructures\RBTree\RedBlackTree.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Graph\Dijkstra\Dijkstra.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Sort\HeapSort\HeapSort.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\DataStructures\LinkedList\LinkedList.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Algorithms\DataStructures\BinaryTree\Commands\BeginInsertion.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\DataStructures\BinaryTree\BinaryTree.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Util\Hash\Commands\BeginHash.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Util\Hash\Commands\EndHash.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Util\Hash\Commands\HashIncreasePower.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Util\Hash\Commands\HashNextCharacter.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Util\Hash\Hash.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="CommandFramework\ACommand.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="CommandFramework\AListener.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="CommandFramework\CommandReceiver.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Graph\BFS\BFS.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Graph\DFS\DFS.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Graph\BFS\Commands\BeginBFS.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Graph\BFS\Commands\EndBFS.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Graph\DFS\Commands\BeginDFS.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Graph\DFS\Commands\EndDFS.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Util\Hash\Test.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\DataStructures\RBTree\RedBlackTree.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="CommandFramework\Interfaces.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="CommandFramework\Test.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\DataStructures\RBTree\Test.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Graph\Dijkstra\Dijkstra.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Graph\Dijkstra\Test.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Sort\HeapSort\HeapSort.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Sort\HeapSort\Test.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\DataStructures\LinkedList\LinkedList.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\DataStructures\LinkedList\Test.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
+    <ClInclude Include="Algorithms\DataStructures\BinaryTree\BinaryTree.h" />
+    <ClInclude Include="Algorithms\DataStructures\BinaryTree\Commands\BeginInsertion.h" />
+    <ClInclude Include="Algorithms\DataStructures\HashMap\StringHashMap.h" />
+    <ClInclude Include="Algorithms\DataStructures\HashMap\Test.h" />
+    <ClInclude Include="Algorithms\DataStructures\LinkedList\LinkedList.h" />
+    <ClInclude Include="Algorithms\DataStructures\LinkedList\Test.h" />
+    <ClInclude Include="Algorithms\DataStructures\RBTree\Test.h" />
+    <ClInclude Include="Algorithms\DataStructures\Stack\Stack.h" />
+    <ClInclude Include="Algorithms\DataStructures\Stack\Test.h" />
+    <ClInclude Include="Algorithms\Graph\BFS\BFS.h" />
+    <ClInclude Include="Algorithms\Graph\BFS\Commands\BeginBFS.h" />
+    <ClInclude Include="Algorithms\Graph\BFS\Commands\EndBFS.h" />
+    <ClInclude Include="Algorithms\Graph\DFS\Commands\BeginDFS.h" />
+    <ClInclude Include="Algorithms\Graph\DFS\Commands\EndDFS.h" />
+    <ClInclude Include="Algorithms\Graph\DFS\DFS.h" />
+    <ClInclude Include="Algorithms\Graph\Dijkstra\Dijkstra.h" />
+    <ClInclude Include="Algorithms\Graph\Dijkstra\Test.h" />
+    <ClInclude Include="Algorithms\Sort\HeapSort\HeapSort.h" />
+    <ClInclude Include="Algorithms\Sort\HeapSort\Test.h" />
+    <ClInclude Include="Algorithms\Util\Hash\Commands\BeginHash.h" />
+    <ClInclude Include="Algorithms\Util\Hash\Commands\EndHash.h" />
+    <ClInclude Include="Algorithms\Util\Hash\Commands\HashIncreasePower.h" />
+    <ClInclude Include="Algorithms\Util\Hash\Commands\HashNextCharacter.h" />
+    <ClInclude Include="Algorithms\Util\Hash\Hash.h" />
+    <ClInclude Include="Algorithms\Util\Hash\Test.h" />
+    <ClInclude Include="CommandFramework\ACommand.h" />
+    <ClInclude Include="CommandFramework\AListener.h" />
+    <ClInclude Include="CommandFramework\CommandReceiver.h" />
+    <ClInclude Include="Algorithms\DataStructures\RBTree\RedBlackTree.h" />
+    <ClInclude Include="CommandFramework\Interfaces.h" />
+    <ClInclude Include="CommandFramework\Test.h" />
   </ItemGroup>
 </Project>

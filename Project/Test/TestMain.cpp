@@ -5,6 +5,7 @@
 #include <Algorithms/Sort/HeapSort/Test.h>
 #include <Algorithms/DataStructures/LinkedList/Test.h>
 #include <Algorithms/DataStructures/HashMap/Test.h>
+#include <Algorithms/DataStructures/Stack/Test.h>
 #include <CommandFramework/Test.h>
 
 
@@ -32,6 +33,10 @@ int main() {
 
    #ifdef TEST_LINKED_LIST
    testLinkedList();
+   #endif
+
+   #ifdef TEST_STACK
+   testStack();
    #endif
 
    #ifdef TEST_HASH_MAP

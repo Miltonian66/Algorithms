@@ -18,3 +18,6 @@
 //
 #define TEST_HASH_MAP
 #define SHOW_HASH_MAP
+//
+//#define TEST_STACK
+//#define SHOW_STACK //not implemented

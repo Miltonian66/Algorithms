@@ -23,6 +23,7 @@ LinkedList &LinkedList::operator=(LinkedList &&other) noexcept{
    _size = other._size;
    other._size = 0;
    other.head = other.tail = nullptr;
+   return *this;
 }
 
 bool LinkedList::empty(){
@@ -108,6 +109,8 @@ LinkedList::Node *LinkedList::_extract(Node *node){
 
 void *LinkedList::_remove(Node *node){
    node = _extract(node);
+   if(!node)
+      return nullptr;
    void *value = node->value;
    delete node;
    return value;
