@@ -75,6 +75,15 @@
     <ClCompile Include="Algorithms\EnumerationBackTrach\Sudoku\Sudoku.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Algorithms\DataStructures\HashMap\StringHashMap.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\DataStructures\Stack\Stack.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\DataStructures\LinkedList\LinkedList.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms\DataStructures\BinaryTree\Commands\BeginInsertion.h">
@@ -152,10 +161,22 @@
     <ClInclude Include="Algorithms\Sort\HeapSort\Test.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Algorithms\EnumerationBackTrach\Sudoku\Sudoku.h">
+    <ClInclude Include="Algorithms\DataStructures\LinkedList\LinkedList.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Algorithms\EnumerationBackTrach\Sudoku\Test.h">
+    <ClInclude Include="Algorithms\DataStructures\LinkedList\Test.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\DataStructures\HashMap\StringHashMap.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\DataStructures\HashMap\Test.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\DataStructures\Stack\Stack.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\DataStructures\Stack\Test.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

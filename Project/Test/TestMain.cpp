@@ -3,6 +3,8 @@
 #include <Algorithms/DataStructures/RBTree/Test.h>
 #include <Algorithms/Graph/Dijkstra/Test.h>
 #include <Algorithms/Sort/HeapSort/Test.h>
+#include <Algorithms/DataStructures/LinkedList/Test.h>
+#include <Algorithms/DataStructures/Stack/Test.h>
 #include <Algorithms/EnumerationBackTrach/Sudoku/Test.h>
 #include <CommandFramework/Test.h>
 
@@ -27,6 +29,14 @@ int main() {
 
    #ifdef TEST_HEAPSORT
    testHeapSort();
+   #endif
+
+   #ifdef TEST_LINKED_LIST
+   testLinkedList();
+   #endif
+
+   #ifdef TEST_STACK
+   testStack();
    #endif
 
    #ifdef TEST_SUDOKU

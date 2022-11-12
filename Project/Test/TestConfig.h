@@ -13,6 +13,12 @@
 //#define TEST_HEAPSORT
 //#define SHOW_HEAPSORT
 //
+//#define TEST_LINKED_LIST
+//#define SHOW_LINKED_LIST
+//
+//#define TEST_STACK
+//#define SHOW_STACK //not implemented
+//
 #define TEST_SUDOKU
 #define SHOW_SUDOKU
 //

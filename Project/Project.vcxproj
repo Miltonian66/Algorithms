@@ -147,6 +147,8 @@
   <ItemGroup>
     <ClCompile Include="Algorithms\DataStructures\BinaryTree\BinaryTree.cpp" />
     <ClCompile Include="Algorithms\DataStructures\BinaryTree\Commands\BeginInsertion.cpp" />
+    <ClCompile Include="Algorithms\DataStructures\LinkedList\LinkedList.cpp" />
+    <ClCompile Include="Algorithms\DataStructures\Stack\Stack.cpp" />
     <ClCompile Include="Algorithms\EnumerationBackTrach\Sudoku\Sudoku.cpp" />
     <ClCompile Include="Algorithms\Graph\BFS\BFS.cpp" />
     <ClCompile Include="Algorithms\Graph\BFS\Commands\BeginBFS.cpp" />
@@ -169,7 +171,13 @@
   <ItemGroup>
     <ClInclude Include="Algorithms\DataStructures\BinaryTree\BinaryTree.h" />
     <ClInclude Include="Algorithms\DataStructures\BinaryTree\Commands\BeginInsertion.h" />
+    <ClInclude Include="Algorithms\DataStructures\HashMap\StringHashMap.h" />
+    <ClInclude Include="Algorithms\DataStructures\HashMap\Test.h" />
+    <ClInclude Include="Algorithms\DataStructures\LinkedList\LinkedList.h" />
+    <ClInclude Include="Algorithms\DataStructures\LinkedList\Test.h" />
     <ClInclude Include="Algorithms\DataStructures\RBTree\Test.h" />
+    <ClInclude Include="Algorithms\DataStructures\Stack\Stack.h" />
+    <ClInclude Include="Algorithms\DataStructures\Stack\Test.h" />
     <ClInclude Include="Algorithms\EnumerationBackTrach\Sudoku\Sudoku.h" />
     <ClInclude Include="Algorithms\EnumerationBackTrach\Sudoku\Test.h" />
     <ClInclude Include="Algorithms\Graph\BFS\BFS.h" />
