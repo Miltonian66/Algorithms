@@ -28,4 +28,8 @@ int main() {
    #ifdef TEST_HEAPSORT
    testHeapSort();
    #endif
+
+   #ifdef TEST_LINKED_LIST
+   testLinkedList();
+   #endif
 }

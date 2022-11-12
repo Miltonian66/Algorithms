@@ -12,3 +12,6 @@
 // 
 //#define TEST_HEAPSORT
 //#define SHOW_HEAPSORT
+//
+//#define TEST_LINKED_LIST
+//#define SHOW_LINKED_LIST
