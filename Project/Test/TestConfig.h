@@ -15,3 +15,6 @@
 //
 //#define TEST_LINKED_LIST
 //#define SHOW_LINKED_LIST
+//
+#define TEST_HASH_MAP
+#define SHOW_HASH_MAP
